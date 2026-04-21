@@ -1,3 +1,12 @@
+:root {
+    --lilas-4: #7f5c8c;
+    --lilas-3: #A472BC;
+    --lilas-2: #C8A9E3;
+    --lilas-1: #F6E3FF;
+    --fundo-ago: #FDF7F3;
+    --link-selec: #606060;
+}
+
 *  {
   padding: 0;
   margin: 0;
@@ -6,7 +15,7 @@
 }
 
 html, body #root {
-  background-color: #FAFAFA;
+  background-color: var(--lilas-1);
   height: 100%;
   display: flex;
   flex-direction: column;

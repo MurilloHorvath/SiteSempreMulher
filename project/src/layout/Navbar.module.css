@@ -1,0 +1,216 @@
+:root {
+    --lilas-4: #7f5c8c;
+    --lilas-3: #A472BC;
+    --lilas-2: #C8A9E3;
+    --lilas-1: #F6E3FF;
+    --fundo-ago: #FDF7F3;
+    --link-selec: #606060;
+}
+
+.navbar {
+    padding: 0.5rem;
+    background-color: var(--lilas-2);
+    box-shadow: 0 4px 50px 1px rgba(0, 0, 0, 0.25);
+}
+
+.logo {
+    height: 80px;
+    margin-left: 5%;
+}
+
+.divMenu{
+    display: flex;
+    align-items: center;
+}
+
+/* Botão do menu hamburguer */
+.menuButton {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 1001;
+}
+
+.menuButton .menuIcon {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: #FFFFFF;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.menuButton.active{
+  display: none;
+}
+
+/* Menu Desktop*/
+.desktopMenu{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 50px;
+}
+
+.desktopMenu .item a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 0.75em;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.desktopMenu .item a:hover {
+  color: var(--lilas-3);
+  text-decoration: underline;
+}
+
+/* Ago Moda Link */
+
+.divAgo , .sidebarDivAgo{
+    width: 80px;
+    height: 80px;
+    margin-right: 5%;
+    overflow: hidden;
+    border: 3px solid var(--lilas-4);
+    border-radius: 100%;
+    background-color: var(--fundo-ago);
+    cursor: pointer;
+}
+
+.linkAgo, .imgAgo, .sidebarImgAgo, .sidebarLinkAgo {
+    width: 100%;
+    height: 100%;
+}
+
+.imgAgo , .sidebarImgAgo {
+    object-fit: contain;
+}
+
+/* Overlay da sidebar */
+.sidebarOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 999;
+}
+
+.sidebarOverlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  width: 280px;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+  transition: right 0.3s ease;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar.active {
+  right: 0;
+}
+
+.sidebarHeader {
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: var(--lilas-4);
+  cursor: pointer;
+  line-height: 1;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.closeButton:hover {
+  background-color: #f5f5f5;
+}
+
+.sidebarContent {
+  padding: 20px;
+  flex: 1;
+}
+
+.sidebarMenu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebarItem {
+  margin-bottom: 20px;
+}
+
+.sidebarItem a {
+  text-decoration: none;
+  color: var(--link-selec);
+  font-size: 1.2rem;
+  font-weight: 500;
+  display: block;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  transition: color 0.3s ease;
+}
+
+.sidebarItem a:hover {
+  color: #e63946;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .menuButton {
+    display: flex;
+  }
+  
+  .desktopMenu , .divAgo{
+    display: none;
+  }
+
+  .logo {
+    height: 50px;
+    margin: 0;
+  }
+}
+
+@media (min-width: 769px) {
+  .sidebar {
+    display: none;
+  }
+  
+  .sidebarOverlay {
+    display: none;
+  }
+}

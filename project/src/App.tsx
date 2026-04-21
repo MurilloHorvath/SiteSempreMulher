@@ -1,11 +1,12 @@
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import Navbar from "./layout/Navbar"
 
 function App() {
-         return (
-          <Router>
-            
-          </Router>
-         )
+    return (
+        <Router>
+            <Navbar />
+        </Router>
+    )
 }
 
 export default App
