@@ -1,7 +1,12 @@
+//Libs React
 import { Link } from "react-router-dom"
 import { useState } from "react"
+
+//Layout
 import Container from "./Container"
 import styles from "./Navbar.module.css"
+
+//Logos
 import logo from "/logoNovaIcon.svg"
 import logoAGO from "/logoAgoNova.png"
 
@@ -29,10 +34,10 @@ function Navbar() {
                             <span className={styles.menuIcon} />
                         </button>
                         <ul className={styles.desktopMenu}>
-                            <li className={styles.item}><Link to="/">QUEM SOMOS</Link></li>
-                            <li className={styles.item}><Link to="/">NOSSO TRABALHO</Link></li>
-                            <li className={styles.item}><Link to="/">INFORME-SE</Link></li>
-                            <li className={styles.item}><Link to="/">COMO AJUDAR</Link></li>
+                            <li className={styles.item}><Link to="/QuemSomos">QUEM SOMOS</Link></li>
+                            <li className={styles.item}><Link to="/NossoTrabalho">NOSSO TRABALHO</Link></li>
+                            <li className={styles.item}><Link to="/InformeSe">INFORME-SE</Link></li>
+                            <li className={styles.item}><Link to="/ComoAjudar">COMO AJUDAR</Link></li>
                         </ul>
                     </div>
                     <div className={styles.divAgo}>

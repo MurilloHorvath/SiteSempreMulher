@@ -1,0 +1,75 @@
+:root {
+    --lilas-4: #7f5c8c;
+    --lilas-3: #A472BC;
+    --lilas-2: #C8A9E3;
+    --lilas-1: #F6E3FF;
+    --fundo-ago: #FDF7F3;
+    --link-selec: #606060;
+}
+
+.footer{
+    background-color: var(--lilas-4);
+    color: #FFFFFF;
+    padding: 2rem;
+    text-align: center;
+    margin-top: auto;
+
+}
+
+.footerContacts {
+    margin: auto;
+}
+
+.footerContactsText, .footerDivSocialIcons {
+    margin-bottom: 2rem;
+}
+
+
+.footerUlSocialIcons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 50px;
+}
+
+.footerLiSocialIcons {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--lilas-3);
+}
+
+.footerLiSocialIcons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 1.5em;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.footerLiSocialIcons a:hover{
+    color: var(--lilas-4);
+    background-color: var(--lilas-2);
+    border-radius: 50%;
+}
+
+.footerContactsText p{
+    padding: 0.5rem;
+}
+
+.subFooter p {
+    font-size: 0.8rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .footerUlSocialIcons {
+        gap: 25px;
+    }
+}
