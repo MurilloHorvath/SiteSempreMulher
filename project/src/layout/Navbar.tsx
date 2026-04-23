@@ -57,16 +57,16 @@ function Navbar() {
                 <div className={styles.sidebarContent}>
                     <ul className={styles.sidebarMenu}>
                         <li className={styles.sidebarItem}>
-                            <Link to="/" onClick={closeSidebar}>QUEM SOMOS</Link>
+                            <Link to="/QuemSomos" onClick={closeSidebar}>QUEM SOMOS</Link>
                         </li>
                         <li className={styles.sidebarItem}>
-                            <Link to="/" onClick={closeSidebar}>NOSSO TRABALHO</Link>
+                            <Link to="/NossoTrabalho" onClick={closeSidebar}>NOSSO TRABALHO</Link>
                         </li>
                         <li className={styles.sidebarItem}>
-                            <Link to="/" onClick={closeSidebar}>INFORME-SE</Link>
+                            <Link to="/InformeSe" onClick={closeSidebar}>INFORME-SE</Link>
                         </li>
                         <li className={styles.sidebarItem}>
-                            <Link to="/" onClick={closeSidebar}>COMO AJUDAR</Link>
+                            <Link to="/ComoAjudar" onClick={closeSidebar}>COMO AJUDAR</Link>
                         </li>
                     </ul>
                     <div className={styles.sidebarDivAgo}>
