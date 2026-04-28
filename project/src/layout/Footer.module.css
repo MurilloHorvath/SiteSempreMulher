@@ -1,19 +1,9 @@
-:root {
-    --lilas-4: #7f5c8c;
-    --lilas-3: #A472BC;
-    --lilas-2: #C8A9E3;
-    --lilas-1: #F6E3FF;
-    --fundo-ago: #FDF7F3;
-    --link-selec: #606060;
-}
-
 .footer{
     background-color: var(--lilas-4);
     color: #FFFFFF;
     padding: 2rem;
     text-align: center;
     margin-top: auto;
-
 }
 
 .footerContacts {

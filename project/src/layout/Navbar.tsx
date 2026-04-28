@@ -41,7 +41,7 @@ function Navbar() {
                         </ul>
                     </div>
                     <div className={styles.divAgo}>
-                        <Link to="/" className={styles.linkAgo}>
+                        <Link to="/AgoModaHome" className={styles.linkAgo}>
                             <img src={logoAGO} alt="Logo Ago Moda" className={styles.imgAgo} />
                         </Link>                        
                     </div>
@@ -70,7 +70,7 @@ function Navbar() {
                         </li>
                     </ul>
                     <div className={styles.sidebarDivAgo}>
-                        <Link to="/" className={styles.sidebarLinkAgo}>
+                        <Link to="/AgoModaHome" className={styles.sidebarLinkAgo}>
                             <img src={logoAGO} alt="Logo Ago Moda" className={styles.sidebarImgAgo} />
                         </Link>                        
                     </div>

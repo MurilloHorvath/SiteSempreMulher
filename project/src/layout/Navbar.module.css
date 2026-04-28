@@ -1,12 +1,3 @@
-:root {
-    --lilas-4: #7f5c8c;
-    --lilas-3: #A472BC;
-    --lilas-2: #C8A9E3;
-    --lilas-1: #F6E3FF;
-    --fundo-ago: #FDF7F3;
-    --link-selec: #606060;
-}
-
 .navbar {
     padding: 0.5rem;
     background-color: var(--lilas-2);
@@ -62,14 +53,13 @@
 .desktopMenu .item a {
   text-decoration: none;
   color: #FFFFFF;
-  font-size: 0.75em;
+  font-size: 1.2rem;
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
 .desktopMenu .item a:hover {
   color: var(--lilas-3);
-  text-decoration: underline;
 }
 
 /* Ago Moda Link */

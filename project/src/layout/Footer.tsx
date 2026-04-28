@@ -37,10 +37,11 @@ function Footer() {
                         <p><strong>+55 (51) 33449591</strong></p>
                         <p>R. Xavier de Carvalho, 80 - Sarandi, Porto Alegre - RS, 91110-440</p>
                     </div>
-                </div>
-                <div className={styles.subFooter}>
-                    <p>© 2026 - Sempre Mulher Instituto de Pesquisa e Intervenção Sobre Relações Raciais. 
-                        Desenvolvido por Murillo Horvath</p>
+                    <div className={styles.subFooter}>
+                        <p>
+                            © 2026 - Sempre Mulher Instituto de Pesquisa e Intervenção Sobre Relações Raciais. Desenvolvido por Murillo Horvath
+                        </p>
+                    </div>
                 </div>
             </Container>
         </footer>

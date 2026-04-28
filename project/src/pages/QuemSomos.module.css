@@ -1,0 +1,216 @@
+/*Div Quem Somos*/
+.divQuemSomos {
+    background-color: var(--lilas-2);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.quemSomosText {
+    align-content: center;
+    text-align: center;
+    max-width: 600px;
+}
+
+.quemSomosText h1 {
+    font-size: 3rem;
+    color: var(--lilas-4);
+    margin-bottom: 50px;
+}
+
+.quemSomosText p {
+    font-size: 1.3rem;
+    color: var(--white);
+}
+
+.imgLogoCompleta {
+    width: 500px;
+}
+
+/*Div Nossa Historia*/
+.divNossaHistoria {
+    background-color: var(--lilas-1);
+    text-align: center;
+    padding: 5rem;
+}
+
+.divNossaHistoria h2 {
+    font-size: 2rem;
+    color: var(--lilas-4);
+}
+
+.divNossaHistoria p {
+    margin: 1.5rem 5rem 1.5rem 5rem;
+    font-size: 1.3rem;
+}
+
+/*Div Missão*/
+.divMissao {
+    width: 100%;
+    background-color: var(--lilas-3);
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.divMissaoText {
+    width: 650px;
+    text-align: center;
+    align-content: center;
+}
+
+.divMissaoText h2 {
+    font-size: 2rem;
+    color: var(--lilas-1);
+}
+
+.divMissaoText p {
+    font-size: 1.5rem;
+    color: var(--lilas-1);
+}
+
+.divMissaoLinkYoutube{
+    width: 550px;
+    height: 350px;
+    background-color: black;
+}
+
+.divMissaoLinkYoutube iframe {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/*Div Valores*/
+.divValores {
+    text-align: center;
+    padding: 5rem;
+}
+
+.divValores h2 {
+    font-size: 2.5rem;
+    color: var(--lilas-5);
+    padding-bottom: 2rem;
+}
+
+.divValores ul{ 
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+
+}
+
+.divValores li {
+    width: 300px;
+    height: 400px;
+    color: var(--lilas-1);
+    padding: 1.5rem;
+    background-color: var(--lilas-2);
+    border-radius: 10px;
+    box-shadow: 0 0 5px 2px var(--lilas-3);
+    font-size: 1.5rem;
+}
+
+.divValores li:hover {
+    background-color: var(--lilas-3);
+}
+
+/* Responsividade */
+@media (max-width: 769px) {
+/*Div Quem Somos*/
+.divQuemSomos {
+    display: block;
+    justify-content: center;
+}
+
+.quemSomosText h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.quemSomosText p {
+    font-size: 1rem;
+}
+
+.imgLogoCompleta {
+    width: 100%;
+}
+
+/*Div Nossa Historia*/
+.divNossaHistoria {
+    background-color: var(--lilas-1);
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+}
+
+.divNossaHistoria h2 {
+    font-size: 1.8rem;
+    color: var(--lilas-4);
+}
+
+.divNossaHistoria p {
+    margin: 1rem;
+    font-size: 0.8rem;
+}
+
+/*Div Missão*/
+.divMissao {
+    display: block;
+    padding: 1rem;
+}
+
+.divMissaoText {
+    width: 100%;
+}
+
+.divMissaoText h2 {
+    font-size: 1.8rem;
+}
+
+.divMissaoText p {
+    font-size: 0.8rem;
+    max-width: 350px;
+    margin: 10px auto 20px auto;
+}
+
+.divMissaoLinkYoutube {
+    margin: auto;
+    width: 100%;
+    max-width: 350px;
+    max-height: 200px;
+    background-color: black;
+}
+
+.divMissaoLinkYoutube iframe {
+    width: 100%;
+    max-height: 100%;
+}
+
+/*Div Valores*/
+.divValores {
+    margin: auto;
+    text-align: center;
+    padding: 1rem;
+}
+
+.divValores h2 {
+    font-size: 2rem;
+}
+
+.divValores ul{ 
+    list-style: none;
+    display: block;
+}
+
+.divValores li {
+    margin: 0px auto 50px auto;
+    width: 90%;
+    max-width: 300px;
+    font-size: 1.5rem;
+}
+}

@@ -11,6 +11,7 @@ import QuemSomos from './pages/QuemSomos'
 import NossoTrabalho from './pages/NossoTrabalho'
 import InformeSe from './pages/InformeSe'
 import ComoAjudar from './pages/ComoAjudar'
+import AgoModaHome from './pages/AgoModa/AgoModaHome'
 
 function App() {
     return (
@@ -23,6 +24,7 @@ function App() {
                     <Route path='/NossoTrabalho' element={<NossoTrabalho/>}/>
                     <Route path='/InformeSe' element={<InformeSe/>}/>
                     <Route path='/ComoAjudar' element={<ComoAjudar/>}/>
+                    <Route path='/AgoModaHome' element={<AgoModaHome/>} />
                 </Routes>
             </Container>
             <Footer />
