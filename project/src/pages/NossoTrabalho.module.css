@@ -1,0 +1,140 @@
+/* session Nosso Trabalho */
+.sessionNossoTrabalho {
+    width: 100%;
+    text-align: center;
+    color: var(--lilas-1);
+    background-color: var(--lilas-5);
+    padding: 3rem;
+}
+
+.sessionNossoTrabalho h1 {
+    padding: 1rem;
+}
+
+.sessionNossoTrabalho p {
+    margin: auto;
+    max-width: 600px;
+    color: var(--lilas-2);
+}
+
+/* session Serviços Existentes*/
+.sessionServicosExistentes {
+    width: 100%;
+    padding: 3rem;
+}
+
+.sessionServicosExistentes h2 {
+    color: var(--lilas-5);
+    margin-bottom: 5rem;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.divServicosExistentes {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 100px;
+    margin-bottom: 3rem;
+}
+
+.divServicosExistentes div {
+    width: 600px;
+}
+
+.divServicosExistentes div h3 {
+    color: var(--lilas-4);
+    font-size: 1.8rem;
+}
+
+.divServicosExistentes div p {
+    margin: 1rem;
+    font-size: 1.3rem;
+}
+
+.cardsEquipeTecnica p {
+    text-align: center;
+    margin: 3rem;
+    font-size: 1.5rem;
+}
+
+.cardsEquipeTecnica ul {
+    list-style: none;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 100px;
+    margin-bottom: 3rem;
+}
+
+.cardsEquipeTecnica ul li {
+    width: 300px;
+    height: 400px;
+    color: var(--lilas-1);
+    padding: 1.5rem;
+    background-color: var(--lilas-2);
+    border-radius: 10px;
+    box-shadow: 0 0 5px 2px var(--lilas-3);
+    font-size: 1.5rem;
+}
+
+/*  session Outros Serviços */
+.sessionOutrosServicos {
+    background-color: var(--lilas-2);
+    width: 100%;
+    text-align: center;
+    padding: 3rem;
+}
+
+.sessionOutrosServicos h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--lilas-1);
+}
+
+.divBrechoSolidario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+}
+
+.textBrechoSolidario {
+    width: 600px;
+}
+
+.textBrechoSolidario h3 {
+    color: var(--lilas-5);
+    font-size: 1.8rem;
+    margin: 1rem;
+}
+
+.textBrechoSolidario p {
+    margin: 1rem;
+    font-size: 1.3rem;
+}
+
+.cardsRoupasNovasSemi p {
+    margin: 1.5rem;
+    font-size: 1.3rem;
+}
+
+.cardsRoupasNovasSemi ul {
+    list-style: none;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 100px;
+    margin-bottom: 3rem;
+}
+
+.cardsRoupasNovasSemi ul li {
+    width: 300px;
+    height: 400px;
+    color: var(--lilas-1);
+    padding: 1.5rem;
+    background-color: var(--lilas-3);
+    border-radius: 10px;
+    box-shadow: 0 0 5px 2px var(--lilas-4);
+    font-size: 1rem;
+}

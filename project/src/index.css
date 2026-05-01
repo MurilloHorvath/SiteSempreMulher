@@ -22,3 +22,12 @@ html, body #root {
   display: flex;
   flex-direction: column;
 }
+
+.fraseImpacto {
+  background-color: var(--lilas-2);
+  color: var(--white);
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  font-size: 1rem;
+};

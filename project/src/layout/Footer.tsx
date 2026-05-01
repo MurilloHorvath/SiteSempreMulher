@@ -34,7 +34,7 @@ function Footer() {
                         </ul>
                     </div>
                     <div className={styles.footerContactsText}>
-                        <p><strong>+55 (51) 33449591</strong></p>
+                        <p><strong>+55 (51) 998712541</strong></p>
                         <p>R. Xavier de Carvalho, 80 - Sarandi, Porto Alegre - RS, 91110-440</p>
                     </div>
                     <div className={styles.subFooter}>

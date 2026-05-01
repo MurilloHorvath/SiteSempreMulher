@@ -6,6 +6,9 @@ import Container from '../layout/Container'
 function QuemSomos(){
     return (
         <Container>
+                <p className='fraseImpacto'>
+                    “Há mais de 20 anos promovendo direitos, fortalecendo mulheres e transformando realidades.”
+                </p>
                 <div className={styles.divQuemSomos}>
                     <div className={styles.quemSomosText}>
                         <h1>Sempre Mulher</h1>

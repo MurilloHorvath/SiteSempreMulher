@@ -4,7 +4,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .quemSomosText {
@@ -16,7 +16,7 @@
 .quemSomosText h1 {
     font-size: 3rem;
     color: var(--lilas-4);
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .quemSomosText p {
