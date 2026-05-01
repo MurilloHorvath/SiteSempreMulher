@@ -138,3 +138,118 @@
     box-shadow: 0 0 5px 2px var(--lilas-4);
     font-size: 1rem;
 }
+
+/* Responsividade Mobile */
+@media (max-width: 768px) {
+/* session Nosso Trabalho */
+.sessionNossoTrabalho {
+    padding: 0rem 1.5rem 1.5rem 1.5rem;
+}
+
+/* session Serviços Existentes*/
+.sessionServicosExistentes {
+    padding: 1.5rem;
+}
+
+.sessionServicosExistentes h2 {
+    margin-bottom: 3rem;
+    font-size: 1.5rem;
+}
+
+.divServicosExistentes {
+    display: block;
+    text-align: center;
+    justify-content: center;
+}
+
+.divServicosExistentes div {
+    width: 100%;
+}
+
+.divServicosExistentes div h3 {
+    font-size: 1.3rem;
+}
+
+.divServicosExistentes div p {
+    margin: 1.5rem 0 1.5rem 0;
+    font-size: 1rem;
+}
+
+.cardsEquipeTecnica p {
+    margin: 2rem;
+    font-size: 1.3rem;
+}
+
+.cardsEquipeTecnica ul {
+    display: block;
+    margin-bottom: 2rem;
+}
+
+.cardsEquipeTecnica ul li {
+    width: 90%;
+    font-size: 1.2rem;
+    margin: 0 auto 1rem auto;
+}
+
+/*  session Outros Serviços */
+.sessionOutrosServicos {
+    padding: 1rem;
+}
+
+.sessionOutrosServicos h2 {
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.divBrechoSolidario {
+    display: block;
+}
+
+.textBrechoSolidario {
+    width: 100%;
+}
+
+.textBrechoSolidario h3 {
+    font-size: 1.3rem;
+    margin: 1.5rem;
+}
+
+.textBrechoSolidario p {
+    font-size: 1rem;
+}
+
+.cardsRoupasNovasSemi p {
+    margin: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.cardsRoupasNovasSemi ul {
+    display: block;
+    margin-bottom: 2rem;
+}
+
+.cardsRoupasNovasSemi ul li {
+    width: 90%;
+    font-size: 1rem;
+    margin: 0 auto 1rem auto;
+}
+}
+
+@media (min-width: 768px) and (max-width:1024px) {
+.cardsEquipeTecnica ul li {
+    width: 40%;
+}
+
+.divBrechoSolidario {
+    display: block;
+    justify-items: center;
+}
+
+.cardsRoupasNovasSemi ul {
+    display: flex;
+}
+
+.cardsRoupasNovasSemi ul li {
+    width: 40%;
+}
+}
