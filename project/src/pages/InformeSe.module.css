@@ -1,0 +1,123 @@
+/* Session Informe-Se */
+.sessionInformeSe {
+    width: 100%;
+    text-align: center;
+    color: var(--lilas-1);
+    background-color: var(--lilas-5);
+    padding: 3rem;
+}
+
+.sessionInformeSe h1 {
+    padding: 1rem;
+}
+
+.sessionInformeSe p {
+    margin: auto;
+    max-width: 600px;
+    color: var(--lilas-2);
+}
+
+/* Session Noticias*/
+.session {
+    width: 100%;
+    justify-items: center;
+}
+
+.sessionContent {
+    width: 1000px;
+    margin: 3rem;
+    padding-bottom: 3rem;
+    border-bottom: solid 1px var(--lilas-2);
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.img {
+    background-color: var(--lilas-3);
+    width: 350px;
+    height: 200px;
+    border-radius: 20px;
+}
+
+.sessionText {
+    width: 700px;
+}
+
+.header {
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+    color: var(--lilas-4);
+}
+
+.titulo{
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: var(--lilas-5);
+}
+
+.descricao {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #404040;
+}
+
+.data {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #404040;
+}
+
+@media (max-width: 768px) {
+/* Session Informe-Se*/
+.sessionInformeSe{
+    padding: 0rem 1.5rem 1.5rem 1.5rem;
+}
+
+/* Session Noticias*/
+.session {
+    width: 100%;
+    justify-items: center;
+}
+
+.sessionContent {
+    width: 100%;
+    margin: 2rem;
+    padding: 0 1rem 1rem 1rem;
+    display: block;
+}
+
+.img {
+    width: 100%; /* Ou qualquer largura desejada */
+    height: auto;
+    aspect-ratio: 16 / 9; /* Mantém a proporção largura/altura fixa */
+}
+
+.sessionText {
+    width: 100%;
+}
+
+.header {
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+    color: var(--lilas-4);
+}
+
+.titulo{
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: var(--lilas-5);
+}
+
+.descricao {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #404040;
+}
+
+.data {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #404040;
+}
+}
