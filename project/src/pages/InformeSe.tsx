@@ -27,8 +27,8 @@ function InformeSe(){
                             Seminário sobre a naturalização da violência, também sobre a construção da masculinidade, 
                             como construímos e pensamos no mundo em que os homens estão cada vez mais violentos e, 
                             ao mesmo tempo, sendo alvos.
-                            <a href="https://www.instagram.com/reel/DW4UdjIjtQY/?utm_source=ig_web_button_share_sheet" className={styles.saibaMais}>Saiba Mais</a>
                         </p>
+                        <a href="https://www.instagram.com/reel/DW4UdjIjtQY/?utm_source=ig_web_button_share_sheet" className={styles.saibaMais}>Saiba Mais</a>
                         <p className={styles.data}>08/04/2026</p>
                     </div>
                 </div>
@@ -40,8 +40,8 @@ function InformeSe(){
                         <p className={styles.descricao}>
                             Dia 05 de Abril de 2002, datade fundação da nossa organização, portanto hoje completamos,
                             24 anos deexistência, resistência e resiliência.
-                            <a href="https://www.instagram.com/p/DWw3pERFD-7/?utm_source=ig_web_button_share_sheet" className={styles.saibaMais}>Saiba Mais</a>
                         </p>
+                        <a href="https://www.instagram.com/p/DWw3pERFD-7/?utm_source=ig_web_button_share_sheet" className={styles.saibaMais}>Saiba Mais</a>
                         <p className={styles.data}>05/04/2026</p>
                     </div>
                 </div>

@@ -8,7 +8,7 @@
 }
 
 .sessionInformeSe h1 {
-    padding: 1rem;
+    padding-bottom: 1rem;
 }
 
 .sessionInformeSe p {
@@ -64,14 +64,14 @@
 
 .data {
     font-size: 1rem;
-    margin-bottom: 1rem;
+    margin: 1rem 0 1rem 0;
     color: #404040;
 }
 
 @media (max-width: 768px) {
 /* Session Informe-Se*/
 .sessionInformeSe{
-    padding: 0rem 1.5rem 1.5rem 1.5rem;
+    padding: 1.5rem;
 }
 
 /* Session Noticias*/
