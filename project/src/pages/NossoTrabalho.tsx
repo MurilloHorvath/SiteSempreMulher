@@ -38,6 +38,14 @@ function NossoTrabalho(){
                             O serviço tem como objetivo acompanhar famílias de forma continuada, promovendo o fortalecimento de vínculos e o acesso a direitos.
                         </p>
                     </div>
+                    <div>
+                        <h3>SCFV - TE (15 a 17 Anos)</h3>
+                        <p>
+                            Voltado para dialogar com as juventudes, nossa modalidade é embelezamento atualmente são 12 adolecentes atendidos, sobretudo meninas,
+                            visando a prática no mundo trabalho na área da beleza com ênfase em tranças afro, fomentamos a aproximação de temas transversais que são trabalhados 
+                            a partir da vivências dos jovens.
+                        </p>
+                    </div>
                 </div>
                 <div className={styles.cardsEquipeTecnica}> 
                     <p>Equipe técnica:</p>

@@ -70,7 +70,7 @@ function AgoModaHome(){
                                 Medidas: 40cmX40cm <br />
                                 Alça: 52cm
                             </p>
-                            <a href="">Encomende já</a>
+                            <a href="https://wa.me/c/555191716483" target="_blank">Encomende já</a>
                         </div>
                     </div>
                     <div className={styles.card}>
@@ -81,7 +81,7 @@ function AgoModaHome(){
                                 Mochila Grande com tecido impermeável + ziper duplo. <br />
                                 Medidas: 34cmX48cm
                             </p>
-                            <a href="">Encomende já</a>
+                            <a href="https://wa.me/c/555191716483" target="_blank">Encomende já</a>
                         </div>
                     </div> 
                     <div className={styles.card}>
@@ -92,7 +92,7 @@ function AgoModaHome(){
                                 Tecidos Tricoline e Impermeável. <br />
                                 Medidas: 24cmX7cmX7cm
                             </p>
-                            <a href="">Encomende já</a>
+                            <a href="https://wa.me/c/555191716483" target="_blank">Encomende já</a>
                         </div>
                     </div>
                     <div className={styles.card}>
@@ -102,7 +102,7 @@ function AgoModaHome(){
                             <p>
                                 Diversas cores.
                             </p>
-                            <a href="">Encomende já</a>
+                            <a href="https://wa.me/c/555191716483" target="_blank">Encomende já</a>
                         </div>
                     </div>
                     <div className={styles.card}>
@@ -112,7 +112,7 @@ function AgoModaHome(){
                             <p>
                                 Tamanho P, Tecido Impermeável.
                             </p>
-                            <a href="">Encomende já</a>
+                            <a href="https://wa.me/c/555191716483" target="_blank">Encomende já</a>
                         </div>
                     </div> 
                     <div className={styles.card}>
@@ -122,7 +122,7 @@ function AgoModaHome(){
                             <p>
                                 Tecido Impermeável.
                             </p>
-                            <a href="">Encomende já</a>
+                            <a href="https://wa.me/c/555191716483" target="_blank">Encomende já</a>
                         </div>
                     </div> 
                     <div className={styles.card}>
@@ -132,7 +132,7 @@ function AgoModaHome(){
                             <p>
                                 Tecido Impermeável, Cor Azul.
                             </p>
-                            <a href="">Encomende já</a>
+                            <a href="https://wa.me/c/555191716483" target="_blank">Encomende já</a>
                         </div>
                     </div>
                     <div className={styles.card}>
@@ -143,7 +143,7 @@ function AgoModaHome(){
                                 Tecido Jeans + Tecido Impermeável. <br />
                                 Medidas: 34cmX48cm
                             </p>
-                            <a href="">Encomende já</a>
+                            <a href="https://wa.me/c/555191716483" target="_blank">Encomende já</a>
                         </div>
                     </div>
                     <div className={styles.card}>
@@ -153,7 +153,7 @@ function AgoModaHome(){
                             <p>
                                 Tecido Impermeável.
                             </p>
-                            <a href="">Encomende já</a>
+                            <a href="https://wa.me/c/555191716483" target="_blank">Encomende já</a>
                         </div>
                     </div> 
                     <div className={styles.card}>
@@ -164,7 +164,7 @@ function AgoModaHome(){
                                 Cobre a cabeça toda. <br />
                                 Medidas 75cmX48cm
                             </p>
-                            <a href="">Encomende já</a>
+                            <a href="https://wa.me/c/555191716483" target="_blank">Encomende já</a>
                         </div>
                     </div> 
                     <div className={styles.card}>
@@ -176,7 +176,7 @@ function AgoModaHome(){
                                 Tecido Sarja. <br />
                                 Medidas: 40cmX40cm
                             </p>
-                            <a href="">Encomende já</a>
+                            <a href="https://wa.me/c/555191716483" target="_blank">Encomende já</a>
                         </div>
                     </div>
                     <div className={styles.card}>
@@ -187,7 +187,7 @@ function AgoModaHome(){
                                 Polchete com ziper duplo com regulador e Engate. <br />
                                 Medidas: 23cmX12cm
                             </p>
-                            <a href="">Encomende já</a>
+                            <a href="https://wa.me/c/555191716483" target="_blank">Encomende já</a>
                         </div>
                     </div> 
                     <div className={styles.card}>
@@ -197,7 +197,7 @@ function AgoModaHome(){
                             <p>
                                 Tecido Tricoline.
                             </p>
-                            <a href="">Encomende já</a>
+                            <a href="https://wa.me/c/555191716483" target="_blank">Encomende já</a>
                         </div>
                     </div>
                     <div className={styles.card}>
@@ -207,7 +207,7 @@ function AgoModaHome(){
                             <p>
                                 Tecido Jeans + Retalho de Tecido Estampado Tricoline.
                             </p>
-                            <a href="">Encomende já</a>
+                            <a href="https://wa.me/c/555191716483" target="_blank">Encomende já</a>
                         </div>
                     </div> 
                 </div>
