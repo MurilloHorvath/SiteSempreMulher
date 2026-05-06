@@ -70,7 +70,7 @@ function Navbar() {
                         </li>
                     </ul>
                     <div className={styles.sidebarDivAgo}>
-                        <Link to="/AgoModaHome" className={styles.sidebarLinkAgo}>
+                        <Link to="/AgoModaHome" className={styles.sidebarLinkAgo} onClick={closeSidebar}>
                             <img src={logoAGO} alt="Logo Ago Moda" className={styles.sidebarImgAgo} />
                         </Link>                        
                     </div>
