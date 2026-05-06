@@ -1,0 +1,216 @@
+/* Session Ago moda header */
+.sessionAgo {
+    width: 100%;
+    text-align: center;
+    color: var(--lilas-1);
+    background-color: var(--lilas-5);
+    padding: 3rem;
+}
+
+.sessionAgo h1 {
+    padding-bottom: 1rem;
+}
+
+.sessionAgo p {
+    margin: auto;
+    max-width: 600px;
+    color: var(--lilas-2);
+}
+
+/* Session Nossa Historia */
+.sessionHistoria {
+    margin: auto;
+    padding: 3rem;
+    text-align: center;
+}
+
+.sessionHistoria h2 {
+    font-size: 2rem;
+    color: var(--lilas-5);
+}
+
+.sessionHistoriaText {
+    display: flex;
+    gap: 50px;
+    padding: 2rem;
+}
+
+.sessionHistoriaText h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: var(--lilas-5);
+}
+
+.sessionHistoriaText p {
+    font-size: 1rem;
+}
+
+
+.divSignificaAgo , .divSobreBrecho{
+    width: 40%;
+    margin: auto;
+    height: 300px;
+    padding: 3rem;
+    border: 1px solid var(--lilas-3);
+    background-color: var(--lilas-2);
+    border-radius: 20px;
+}
+
+.divSobreBrecho ul {
+    list-style: none;
+    font-size: 0.8rem;
+    margin: 1rem;
+}
+
+/* Session Catalogo */
+.sessionCatologo {
+    width: 100%;
+    background-color: var(--lilas-3);
+    text-align: center;
+    padding: 3rem;
+}
+
+.sessionCatologo h2 {
+    font-size: 2rem;
+    color: var(--lilas-5);
+    margin-bottom: 3rem;
+}
+
+.catalogo {
+    margin: 5rem;    
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 50px;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    border: 1px solid var(--lilas-1);
+    border-radius: 20px;
+    background-color: var(--lilas-2);
+}
+
+.card img {
+    width: 100px;
+    height: 200px;
+    border-radius: 20px 0 0 20px;
+}
+
+.cardText {
+    text-align: center;
+    margin: auto;
+}
+
+/* Responsividade Mobile */
+@media (max-width: 767px) {
+/* Session Ago moda header */
+.sessionAgo {
+    padding: 1.5rem;
+}
+
+/* Session Nossa Historia */
+.sessionHistoria {
+    padding: 0rem;
+}
+
+.sessionHistoria h2 {
+    margin: 2rem;
+}
+
+.sessionHistoriaText {
+    display: block;
+    padding: 0rem;
+}
+
+.sessionHistoriaText h3 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: var(--lilas-5);
+}
+
+.sessionHistoriaText p {
+    font-size: 0.8rem;
+}
+
+
+.divSignificaAgo , .divSobreBrecho{
+    width: 90%;
+    padding: 2rem;
+    margin-bottom: 25px;
+}
+
+.divSobreBrecho ul {
+    list-style: none;
+    font-size: 0.8rem;
+    margin: 1rem;
+}
+
+/* Session Catalogo */
+.sessionCatologo {
+    padding: 0rem;
+}
+
+.sessionCatologo h2 {
+    font-size: 2rem;
+    margin: 2rem;
+}
+
+.catalogo {
+    margin: 0.5rem;    
+    display: block;
+}
+
+.card {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.card img {
+    width: 100px;
+    height: 200px;
+}
+
+.cardText {
+    text-align: center;
+    margin: auto;
+    max-width: 50%;
+}
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+/* Session Nossa Historia */
+.sessionHistoria {
+    padding: 0rem;
+}
+
+.sessionHistoria h2 {
+    margin: 2rem;
+}
+
+.sessionHistoriaText p {
+    font-size: 0.8rem;
+}
+
+.divSignificaAgo , .divSobreBrecho{
+    width: 50%;
+    padding: 2rem;
+    margin-bottom: 25px;
+}
+
+/* Session Catalogo */
+.sessionCatologo {
+    padding: 0rem;
+}
+
+.sessionCatologo h2 {
+    font-size: 2rem;
+    margin: 2rem;
+}
+
+.catalogo {
+    margin: 0.5rem;    
+    display: grid;
+    grid-template-columns: auto auto;
+}
+}

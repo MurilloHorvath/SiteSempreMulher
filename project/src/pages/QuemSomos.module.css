@@ -82,12 +82,11 @@
     height: 100%;
 }
 
-
-
 /*Div Valores*/
 .divValores {
     text-align: center;
     padding: 5rem;
+    margin: auto;
 }
 
 .divValores h2 {
@@ -119,11 +118,15 @@
 }
 
 /* Responsividade */
-@media (max-width: 769px) {
+@media (max-width: 768px) {
 /*Div Quem Somos*/
 .divQuemSomos {
     display: block;
     justify-content: center;
+}
+
+.quemSomosText {
+    margin: auto;
 }
 
 .quemSomosText h1 {
@@ -211,5 +214,33 @@
     width: 90%;
     max-width: 300px;
     font-size: 1.5rem;
+}
+}
+
+@media (min-width: 768px) and (max-width: 1440px) {
+/*Div Valores*/
+.divValores {
+    margin: auto;
+    text-align: center;
+    padding: 1rem;
+}
+
+.divValores h2 {
+    font-size: 2rem;
+}
+
+.divValores ul{ 
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.divValores li {
+    font-size: 1.5rem;
+    flex: 0 0 calc(45% - 10px);
+    height: 300px;
+    margin: auto;
+    margin-bottom: 30px;
 }
 }

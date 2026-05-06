@@ -236,8 +236,15 @@
 }
 
 @media (min-width: 768px) and (max-width:1024px) {
+.cardsEquipeTecnica ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .cardsEquipeTecnica ul li {
-    width: 40%;
+    flex: 0 0 calc(40% - 10px);
+    margin: 0;
 }
 
 .divBrechoSolidario {

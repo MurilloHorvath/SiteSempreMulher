@@ -6,7 +6,6 @@ import Footer from "./layout/Footer"
 import Container from './layout/Container'
 
 //Pages + SubPages
-import Home from './pages/Home'
 import QuemSomos from './pages/QuemSomos'
 import NossoTrabalho from './pages/NossoTrabalho'
 import InformeSe from './pages/InformeSe'
@@ -19,7 +18,7 @@ function App() {
             <Navbar />
             <Container>
                 <Routes>
-                    <Route path='/' element={<Home/>}></Route>
+                    <Route path='/' element={<QuemSomos/>}></Route>
                     <Route path='/QuemSomos' element={<QuemSomos/>}/>
                     <Route path='/NossoTrabalho' element={<NossoTrabalho/>}/>
                     <Route path='/InformeSe' element={<InformeSe/>}/>

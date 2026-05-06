@@ -138,3 +138,36 @@
     font-size: 1rem;
 }
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+.sessionCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    width: 80%;
+    flex: 0 0 calc(45% - 10px);
+    height: 300px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.cardTitulo {
+    font-size: 1rem;
+}
+
+.cardDesc {
+    font-size: 0.8rem;
+}
+
+.listItem {
+    font-size: 0.6rem;
+}
+
+.linkAgo {
+    margin-top: 1rem;
+    font-size: 0.6rem;
+}
+}
