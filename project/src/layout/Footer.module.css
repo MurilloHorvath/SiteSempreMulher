@@ -1,33 +1,60 @@
 .footer{
-    background-color: var(--lilas-4);
+    position: relative;
+    background: var(--gradient-hero);
     color: #FFFFFF;
-    padding: 2rem;
+    padding: 3rem 2rem 1.5rem 2rem;
     text-align: center;
     margin-top: auto;
 }
 
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: var(--gradient-accent);
+}
+
 .footerContacts {
     margin: auto;
+    max-width: 900px;
 }
 
 .footerContactsText, .footerDivSocialIcons {
     margin-bottom: 2rem;
 }
 
+.footerContactsText p:first-child {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    font-weight: 600;
+    max-width: 560px;
+    margin: 0 auto 0.5rem auto;
+}
 
 .footerUlSocialIcons {
     display: flex;
     justify-content: center;
     align-items: center;
     list-style: none;
-    gap: 50px;
+    gap: 30px;
 }
 
 .footerLiSocialIcons {
-    width: 50px;
-    height: 50px;
+    width: 52px;
+    height: 52px;
     border-radius: 50%;
-    background-color: var(--lilas-3);
+    background-color: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    transition: transform var(--transition), background-color var(--transition), box-shadow var(--transition);
+}
+
+.footerLiSocialIcons:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-md);
+    background-color: var(--lilas-2);
 }
 
 .footerLiSocialIcons a {
@@ -38,28 +65,38 @@
     height: 100%;
     text-decoration: none;
     color: #FFFFFF;
-    font-size: 1.5em;
+    font-size: 1.4em;
     font-weight: 500;
-    transition: color 0.3s ease;
-}
-
-.footerLiSocialIcons a:hover{
-    color: var(--lilas-4);
-    background-color: var(--lilas-2);
-    border-radius: 50%;
 }
 
 .footerContactsText p{
-    padding: 0.5rem;
+    padding: 0.4rem;
+    opacity: 0.95;
+}
+
+.subFooter {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .subFooter p {
     font-size: 0.8rem;
+    opacity: 0.75;
 }
 
 /* Responsividade */
 @media (max-width: 768px) {
+    .footer {
+        padding: 2.5rem 1.2rem 1.2rem 1.2rem;
+    }
+
     .footerUlSocialIcons {
-        gap: 25px;
+        gap: 20px;
+    }
+
+    .footerLiSocialIcons {
+        width: 46px;
+        height: 46px;
     }
 }

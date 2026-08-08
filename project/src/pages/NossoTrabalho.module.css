@@ -3,8 +3,9 @@
     width: 100%;
     text-align: center;
     color: var(--lilas-1);
-    background-color: var(--lilas-5);
-    padding: 3rem;
+    background: var(--gradient-hero);
+    padding: 3.5rem 3rem;
+    border-radius: 0 0 var(--radius-lg) var(--radius-lg);
 }
 
 .sessionNossoTrabalho h1 {
@@ -72,24 +73,34 @@
     height: 400px;
     color: var(--lilas-1);
     padding: 1.5rem;
-    background-color: var(--lilas-2);
-    border-radius: 10px;
-    box-shadow: 0 0 5px 2px var(--lilas-3);
+    background: var(--gradient-primary);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
     font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.cardsEquipeTecnica ul li:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-lg);
 }
 
 /*  session Outros Serviços */
 .sessionOutrosServicos {
-    background-color: var(--lilas-2);
+    background: var(--gradient-soft);
     width: 100%;
     text-align: center;
-    padding: 3rem;
+    padding: 4rem 3rem;
 }
 
 .sessionOutrosServicos h2 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
-    color: var(--lilas-1);
+    color: var(--lilas-5);
 }
 
 .divBrechoSolidario {
@@ -133,10 +144,20 @@
     height: 400px;
     color: var(--lilas-1);
     padding: 1.5rem;
-    background-color: var(--lilas-3);
-    border-radius: 10px;
-    box-shadow: 0 0 5px 2px var(--lilas-4);
+    background: var(--gradient-hero);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
     font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.cardsRoupasNovasSemi ul li:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-lg);
 }
 
 /* Responsividade Mobile */

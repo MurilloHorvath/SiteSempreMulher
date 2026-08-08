@@ -1,12 +1,33 @@
 .navbar {
     padding: 0.5rem;
-    background-color: var(--lilas-2);
-    box-shadow: 0 4px 50px 1px rgba(0, 0, 0, 0.25);
+    background: var(--gradient-primary);
+    box-shadow: 0 4px 30px rgba(74, 44, 90, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: padding var(--transition), box-shadow var(--transition), background-color var(--transition);
+}
+
+.navbar.scrolled {
+    padding: 0.25rem 0.5rem;
+    background-color: rgba(127, 92, 140, 0.92);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: var(--shadow-md);
 }
 
 .logo {
     height: 80px;
     margin-left: 5%;
+    transition: height var(--transition), transform var(--transition);
+}
+
+.navbar.scrolled .logo {
+    height: 60px;
+}
+
+.logo:hover {
+    transform: scale(1.05);
 }
 
 .divMenu{
@@ -18,7 +39,9 @@
 .menuButton {
   display: none;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
   width: 30px;
   height: 24px;
   background: none;
@@ -34,11 +57,19 @@
   width: 100%;
   background-color: #FFFFFF;
   border-radius: 2px;
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-.menuButton.active{
-  display: none;
+.menuButton.active .menuIcon:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+
+.menuButton.active .menuIcon:nth-child(2) {
+  opacity: 0;
+}
+
+.menuButton.active .menuIcon:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
 }
 
 /* Menu Desktop*/
@@ -47,19 +78,42 @@
     list-style: none;
     margin: 0;
     padding: 0;
-    gap: 50px;
+    gap: 40px;
+}
+
+.desktopMenu .item {
+  position: relative;
 }
 
 .desktopMenu .item a {
   text-decoration: none;
   color: #FFFFFF;
-  font-size: 1.2rem;
-  font-weight: 500;
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
   transition: color 0.3s ease;
+  padding-bottom: 4px;
+}
+
+.desktopMenu .item::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background-color: var(--lilas-1);
+  transition: width var(--transition);
+  border-radius: 2px;
+}
+
+.desktopMenu .item:hover::after {
+  width: 100%;
 }
 
 .desktopMenu .item a:hover {
-  color: var(--lilas-3);
+  color: var(--lilas-1);
 }
 
 /* Ago Moda Link */
@@ -73,6 +127,12 @@
     border-radius: 100%;
     background-color: var(--fundo-ago);
     cursor: pointer;
+    transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.divAgo:hover {
+    transform: scale(1.06);
+    box-shadow: var(--shadow-md);
 }
 
 .linkAgo, .imgAgo, .sidebarImgAgo, .sidebarLinkAgo {
@@ -91,7 +151,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(74, 44, 90, 0.55);
+  backdrop-filter: blur(2px);
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s ease;
@@ -111,8 +172,8 @@
   width: 280px;
   height: 100%;
   background-color: #fff;
-  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
-  transition: right 0.3s ease;
+  box-shadow: -8px 0 30px rgba(74, 44, 90, 0.2);
+  transition: right 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 1000;
   display: flex;
   flex-direction: column;
@@ -131,7 +192,7 @@
 .closeButton {
   background: none;
   border: none;
-  font-size: 2rem;
+  font-size: 1.4rem;
   color: var(--lilas-4);
   cursor: pointer;
   line-height: 1;
@@ -142,11 +203,12 @@
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  transition: background-color 0.3s ease;
+  transition: background-color var(--transition), transform var(--transition);
 }
 
 .closeButton:hover {
-  background-color: #f5f5f5;
+  background-color: var(--lilas-1);
+  transform: rotate(90deg);
 }
 
 .sidebarContent {
@@ -161,22 +223,25 @@
 }
 
 .sidebarItem {
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .sidebarItem a {
   text-decoration: none;
   color: var(--link-selec);
-  font-size: 1.2rem;
-  font-weight: 500;
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 600;
   display: block;
-  padding: 10px 0;
-  border-bottom: 1px solid #eee;
-  transition: color 0.3s ease;
+  padding: 10px 12px;
+  border-radius: var(--radius-sm);
+  transition: color 0.3s ease, background-color 0.3s ease, padding-left 0.3s ease;
 }
 
 .sidebarItem a:hover {
-  color: #e63946;
+  color: var(--lilas-5);
+  background-color: var(--lilas-1);
+  padding-left: 18px;
 }
 
 /* Responsividade */
@@ -193,6 +258,10 @@
     height: 50px;
     margin: 0;
   }
+
+  .navbar.scrolled .logo {
+    height: 42px;
+  }
 }
 
 @media (min-width: 769px) {
@@ -206,7 +275,10 @@
 }
 
 @media (min-width: 769px) and (max-width: 1440px) {
+.desktopMenu {
+  gap: 24px;
+}
 .desktopMenu .item a {
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 }

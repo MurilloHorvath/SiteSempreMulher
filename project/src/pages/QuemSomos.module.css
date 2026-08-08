@@ -1,10 +1,12 @@
 /*Div Quem Somos*/
 .divQuemSomos {
-    background-color: var(--lilas-2);
+    background: var(--gradient-primary);
     width: 100%;
     display: flex;
     justify-content: center;
-    padding: 1rem;
+    align-items: center;
+    padding: 3rem 1rem;
+    border-radius: 0 0 var(--radius-lg) var(--radius-lg);
 }
 
 .quemSomosText {
@@ -15,7 +17,7 @@
 
 .quemSomosText h1 {
     font-size: 3rem;
-    color: var(--lilas-4);
+    color: var(--white);
     margin-bottom: 30px;
 }
 
@@ -26,6 +28,12 @@
 
 .imgLogoCompleta {
     width: 500px;
+    filter: drop-shadow(var(--shadow-md));
+    transition: transform var(--transition);
+}
+
+.imgLogoCompleta:hover {
+    transform: scale(1.03);
 }
 
 /*Div Nossa Historia*/
@@ -48,10 +56,11 @@
 /*Div Missão*/
 .divMissao {
     width: 100%;
-    background-color: var(--lilas-3);
+    background: var(--gradient-hero);
     padding: 5rem;
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 100px;
 }
 
@@ -75,6 +84,9 @@
     width: 550px;
     height: 350px;
     background-color: black;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
 }
 
 .divMissaoLinkYoutube iframe {
@@ -107,14 +119,20 @@
     height: 400px;
     color: var(--lilas-1);
     padding: 1.5rem;
-    background-color: var(--lilas-2);
-    border-radius: 10px;
-    box-shadow: 0 0 5px 2px var(--lilas-3);
+    background: var(--gradient-primary);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
     font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: transform var(--transition), box-shadow var(--transition);
 }
 
 .divValores li:hover {
-    background-color: var(--lilas-3);
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-lg);
 }
 
 /* Responsividade */

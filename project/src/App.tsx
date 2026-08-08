@@ -4,12 +4,14 @@ import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import Navbar from "./layout/Navbar"
 import Footer from "./layout/Footer"
 import Container from './layout/Container'
+import ScrollToTopButton from './layout/ScrollToTopButton'
 
 //Pages + SubPages
 import QuemSomos from './pages/QuemSomos'
 import NossoTrabalho from './pages/NossoTrabalho'
 import InformeSe from './pages/InformeSe'
 import ComoAjudar from './pages/ComoAjudar'
+import Transparencia from './pages/Transparencia'
 import AgoModaHome from './pages/AgoModa/AgoModaHome'
 
 function App() {
@@ -23,10 +25,12 @@ function App() {
                     <Route path='/NossoTrabalho' element={<NossoTrabalho/>}/>
                     <Route path='/InformeSe' element={<InformeSe/>}/>
                     <Route path='/ComoAjudar' element={<ComoAjudar/>}/>
+                    <Route path='/Transparencia' element={<Transparencia/>}/>
                     <Route path='/AgoModaHome' element={<AgoModaHome/>} />
                 </Routes>
             </Container>
             <Footer />
+            <ScrollToTopButton />
         </Router>
     )
 }

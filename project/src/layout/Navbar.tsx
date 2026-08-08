@@ -1,6 +1,6 @@
 //Libs React
 import { Link } from "react-router-dom"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 //Layout
 import Container from "./Container"
@@ -13,6 +13,8 @@ import logoAGO from "/logoAgoNova.png"
 
 function Navbar() {
     const [sidebarOpen, setSidebarOpen] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
+
     const toggleSidebar = () => {
         setSidebarOpen(!sidebarOpen)
     };
@@ -20,9 +22,17 @@ function Navbar() {
         setSidebarOpen(false)
     }
 
+    useEffect(() => {
+        const handleScroll = () => {
+            setScrolled(window.scrollY > 12);
+        };
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+
     return(
         <>
-            <nav className={styles.navbar}>
+            <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : ''}`}>
                 <Container>
                     <img src={logo} alt="Logo Sempre Mulher" className={styles.logo} />
                     <div className={styles.divMenu}>
@@ -38,6 +48,7 @@ function Navbar() {
                             <li className={styles.item}><Link to="/NossoTrabalho">NOSSO TRABALHO</Link></li>
                             <li className={styles.item}><Link to="/InformeSe">INFORME-SE</Link></li>
                             <li className={styles.item}><Link to="/ComoAjudar">COMO AJUDAR</Link></li>
+                            <li className={styles.item}><Link to="/Transparencia">TRANSPARÊNCIA</Link></li>
                         </ul>
                     </div>
                     <div className={styles.divAgo}>
@@ -67,6 +78,9 @@ function Navbar() {
                         </li>
                         <li className={styles.sidebarItem}>
                             <Link to="/ComoAjudar" onClick={closeSidebar}>COMO AJUDAR</Link>
+                        </li>
+                        <li className={styles.sidebarItem}>
+                            <Link to="/Transparencia" onClick={closeSidebar}>TRANSPARÊNCIA</Link>
                         </li>
                     </ul>
                     <div className={styles.sidebarDivAgo}>

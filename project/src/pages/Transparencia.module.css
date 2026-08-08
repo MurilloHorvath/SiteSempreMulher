@@ -1,0 +1,294 @@
+/* Session Transparência (hero) */
+.sessionTransparencia {
+    width: 100%;
+    text-align: center;
+    color: var(--lilas-1);
+    background: var(--gradient-hero);
+    padding: 3.5rem 3rem;
+    border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+}
+
+.sessionTransparencia h1 {
+    padding-bottom: 1rem;
+    font-size: 2.6rem;
+    color: var(--white);
+}
+
+.sessionTransparencia p {
+    margin: auto;
+    max-width: 650px;
+    color: var(--lilas-1);
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Session Como Usamos os Recursos */
+.sessionRecursos {
+    width: 100%;
+    padding: 4rem 3rem;
+    text-align: center;
+}
+
+.sessionRecursos h2 {
+    color: var(--lilas-5);
+    font-size: 2.3rem;
+    margin-bottom: 0.75rem;
+}
+
+.recursosIntro {
+    max-width: 650px;
+    margin: 0 auto 3rem auto;
+    color: var(--link-selec);
+    font-size: 1.05rem;
+}
+
+.barrasWrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+}
+
+.barraItem {
+    text-align: left;
+}
+
+.barraLabel {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--lilas-5);
+}
+
+.barraPercentual {
+    color: var(--lilas-4);
+    font-family: var(--font-heading);
+    font-weight: 700;
+}
+
+.barraFundo {
+    width: 100%;
+    height: 14px;
+    background-color: var(--lilas-1);
+    border-radius: 999px;
+    overflow: hidden;
+    box-shadow: inset 0 1px 3px rgba(74, 44, 90, 0.15);
+}
+
+.barraPreenchida {
+    height: 100%;
+    background: var(--gradient-primary);
+    border-radius: 999px;
+    transition: width 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Session Fontes de Recursos */
+.sessionFontes {
+    width: 100%;
+    background: var(--gradient-soft);
+    text-align: center;
+    padding: 4rem 3rem;
+}
+
+.sessionFontes h2 {
+    font-size: 2.3rem;
+    color: var(--lilas-5);
+    margin-bottom: 3rem;
+}
+
+.sessionCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+}
+
+.card {
+    width: 260px;
+    padding: 2rem 1.5rem;
+    background-color: var(--white);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+}
+
+.cardIcon {
+    font-size: 2rem;
+    color: var(--lilas-4);
+    margin-bottom: 1rem;
+}
+
+.cardTitulo {
+    font-size: 1.3rem;
+    margin-bottom: 0.75rem;
+    color: var(--lilas-5);
+}
+
+.cardDesc {
+    color: var(--link-selec);
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Session Documentos */
+.sessionDocumentos {
+    width: 100%;
+    padding: 4rem 3rem;
+    text-align: center;
+}
+
+.sessionDocumentos h2 {
+    font-size: 2.3rem;
+    color: var(--lilas-5);
+    margin-bottom: 0.75rem;
+}
+
+.documentosIntro {
+    max-width: 650px;
+    margin: 0 auto 2.5rem auto;
+    color: var(--link-selec);
+    font-size: 1.05rem;
+}
+
+.listaDocumentos {
+    list-style: none;
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.documentoItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--white);
+    border: 1px solid var(--lilas-1);
+    border-radius: var(--radius-sm);
+    padding: 1.1rem 1.5rem;
+    box-shadow: var(--shadow-sm);
+    transition: transform var(--transition), box-shadow var(--transition);
+    text-align: left;
+}
+
+.documentoItem:hover {
+    transform: translateX(4px);
+    box-shadow: var(--shadow-md);
+}
+
+.documentoInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.documentoTitulo {
+    font-weight: 600;
+    color: var(--lilas-5);
+}
+
+.documentoAno {
+    font-size: 0.85rem;
+    color: var(--link-selec);
+}
+
+.documentoLink {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--gradient-primary);
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
+    border-radius: 999px;
+    transition: transform var(--transition), box-shadow var(--transition);
+    white-space: nowrap;
+}
+
+.documentoLink:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-sm);
+}
+
+/* Session Contato */
+.sessionContato {
+    width: 100%;
+    text-align: center;
+    background-color: var(--lilas-3);
+    padding: 3rem;
+    color: var(--lilas-1);
+}
+
+.sessionContato h2 {
+    font-size: 2rem;
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+
+.sessionContato p {
+    font-size: 1.1rem;
+}
+
+/* Responsividade Mobile */
+@media (max-width: 768px) {
+    .sessionTransparencia {
+        padding: 2.5rem 1.5rem;
+        border-radius: 0 0 var(--radius-md) var(--radius-md);
+    }
+
+    .sessionTransparencia h1 {
+        font-size: 2rem;
+    }
+
+    .sessionTransparencia p {
+        font-size: 1rem;
+    }
+
+    .sessionRecursos, .sessionFontes, .sessionDocumentos {
+        padding: 2.5rem 1.2rem;
+    }
+
+    .sessionRecursos h2, .sessionFontes h2, .sessionDocumentos h2 {
+        font-size: 1.7rem;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .documentoItem {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+    }
+
+    .documentoLink {
+        align-self: stretch;
+        justify-content: center;
+    }
+
+    .sessionContato {
+        padding: 2rem 1.2rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .sessionCards {
+        gap: 24px;
+    }
+
+    .card {
+        flex: 0 0 calc(45% - 12px);
+    }
+}
